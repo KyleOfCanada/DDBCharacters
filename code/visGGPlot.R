@@ -4,7 +4,7 @@ library(here)
 
 #### load data ####
 
-load(here('data', 'tidyDat.RData'))
+dat <- readRDS(here('data', 'tidyDat.rds'))
 
 ##### create colour scale ####
 

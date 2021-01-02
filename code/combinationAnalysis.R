@@ -2,11 +2,10 @@
 library(tidyverse)
 library(here)
 library(knitr)
-# library(kableExtra)
 
 #### load data ####
 
-load(here('data', 'tidyDat.RData'))
+dat <- readRDS(here('data', 'tidyDat.rds'))
 
 #### analysis of combinations ####
 
