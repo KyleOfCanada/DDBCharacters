@@ -29,5 +29,5 @@ dat <- dat %>% left_join(xCoords) %>% # add X and Y coordinates
 
 #### Write tidy data file ####
 
-save(dat,
-     file = here('data', 'tidyDat.RData'))
+saveRDS(dat,
+     file = here('data', 'tidyDat.rds'))
