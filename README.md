@@ -4,12 +4,12 @@ A look at character data from D&amp;D Beyond
 
 During a development update video on August 29th 2018 the following graphic was shown. It shows the popularity of the race and class combinations for the 20 most popular races.
 
-![DDB screenshot](https://github.com/KyleOfCanada/DDBCharacters/main/data/Screen%20Shot%202018-08-31%20at%2011.05.47%20PM.png)
+![DDB screenshot](https://github.com/KyleOfCanada/DDBCharacters/raw/main/data/Screen%20Shot%202018-08-31%20at%2011.05.47%20PM.png)
 
 I wanted to use this data and see which combinations appeared more or less often than expected based on the popularity of its component race and class. To do this I calculated what the mathematically expected popularity of each combination would be by multiplying the popularity of the component race and class. For example, if 20% of all characters were human, and 10% of all characters were fighters, you would mathematically expect 20% * 10% = 2% of all characters to be human fighters. I then compared the observed popularity to the expected popularity and expressed it as a percent of expected. This was the result:
 
 
-![Scores](https://github.com/KyleOfCanada/DDBCharacters/main/plots/DDB%20uniqueness%20scores.png)
+![Scores](https://github.com/KyleOfCanada/DDBCharacters/raw/main/plots/DDB%20uniqueness%20scores.png)
 
 The highest and lowest scoring combinations were:
 
