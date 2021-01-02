@@ -2,7 +2,7 @@
 library(tidyverse)
 library(here)
 library(knitr)
-library(kableExtra)
+# library(kableExtra)
 
 #### load data ####
 
@@ -19,15 +19,9 @@ dat %>%
          Race,
          Class,
          Percent = percentValue) %>% 
-  kable('html',
+  kable('pipe',
         digits = 0,
-        caption = '5 Highest Combinations') %>% 
-  kable_styling("striped", "bordered") %>% 
-  footnote(general = "D&D Beyond Developer Update (Aug 29, 2018)", 
-           general_title = "Source:", 
-           footnote_as_chunk = T) %>% 
-  as_image(file = here('plots', '5 Top Table.png'),
-           density = 600)
+        caption = '5 Highest Combinations') 
 
 # bottom 5
 dat %>% 
@@ -38,15 +32,9 @@ dat %>%
          Race,
          Class,
          Percent = percentValue) %>% 
-  kable('html',
+  kable('pipe',
         digits = 0,
-        caption = '5 Lowest Combinations') %>% 
-  kable_styling("striped", "bordered") %>% 
-  footnote(general = "D&D Beyond Developer Update (Aug 29, 2018)", 
-           general_title = "Source:", 
-           footnote_as_chunk = T) %>% 
-  as_image(file = here('plots', '5 Bottom Table.png'),
-           density = 600)
+        caption = '5 Lowest Combinations')
 
 
 # most/least divergent races and classes
