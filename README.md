@@ -13,7 +13,7 @@ I wanted to use this data and see which combinations appeared more or less often
 
 The highest and lowest scoring combinations were:
 
-Table: 5 Highest Combinations
+Table: 10 Highest Combinations
 
 |   |Race      |Class     | Percent|
 |--:|:---------|:---------|-------:|
@@ -28,7 +28,7 @@ Table: 5 Highest Combinations
 |  9|Dwarf     |Cleric    |     258|
 | 10|Aasimar   |Paladin   |     253|
 
-Table: 5 Lowest Combinations
+Table: 10 Lowest Combinations
 
 |    |Race       |Class     | Percent|
 |---:|:----------|:---------|-------:|
