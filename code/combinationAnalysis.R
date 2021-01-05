@@ -9,7 +9,7 @@ dat <- readRDS(here('data', 'tidyDat.rds'))
 
 #### analysis of combinations ####
 
-# top 5
+# top 10
 dat %>% 
   arrange(desc(percentValue)) %>% 
   mutate(` ` = 1:nrow(.)) %>% 
@@ -20,9 +20,9 @@ dat %>%
          Percent = percentValue) %>% 
   kable('pipe',
         digits = 0,
-        caption = '5 Highest Combinations') 
+        caption = '10 Highest Combinations') 
 
-# bottom 5
+# bottom 10
 dat %>% 
   arrange(percentValue) %>% 
   mutate(` ` = nrow(.):1) %>% 
@@ -33,7 +33,7 @@ dat %>%
          Percent = percentValue) %>% 
   kable('pipe',
         digits = 0,
-        caption = '5 Lowest Combinations')
+        caption = '10 Lowest Combinations')
 
 
 # most/least divergent races and classes
